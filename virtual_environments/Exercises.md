@@ -8,7 +8,7 @@ Note: Make sure you have done the [repetition exercise](../repetition) before yo
 ## Before you start
 You can do these exercises either on your computer (if you have a unix shell) or on the UIO login nodes (`ssh yourusername@login.uio.no`). If you do them on the login nodes, and you did the previous exercise on your computer, you should move your code to your UIO home area first:
 ```
-scp path/to/sequence_matcher yourusername@login.uio.no
+scp path/to/sequence_matcher yourusername@login.uio.no:.
 ```
 
 The above command moves the folder `sequence_matcher` to your home area.
@@ -92,7 +92,38 @@ If nothing happens, it means the import went fine and everything is working.
 
 
 ## Exercise 4: Extending your package
-We 
+We now want to extend our sequence matcher to be able to find matches on a real reference genome. In order to do that, we will use python package `pyfaidx` to read sequences from a reference genome (in a fasta file).
 
+* Start by downloading [this fasta file](hg19_chr20.fasta) which contains chr20 on the hg19 reference genome.
+* Test that pyfaidx is working by opening an interactive Python shell (just type `python3` in the same directory that you have the hg19_chr20.fasta file).
+
+Do the following in the interactive python shell: 
+```python
+# Import Fasta from the pyfaidx package
+from pyfaidx import Fasta
+# make a reference object
+reference = Fasta("hg19_chr20.fasta")
+
+# Try extracting a sequence (choose any region)
+print(reference["20"][100000:100010])
+```
+
+In the code above, we access the chromosome 20 by indexing `reference` by 20. We then extract a sequence by indexing again using "slicing" (`[from:to]`). Play around with this in the interactive shell until you feel comfortable with extracting sequences.
+
+Make a new function `region_has_pattern` in sequence_matcher.py. The function should take four arguments:
+* A fasta file name (e.g. hg19_chr20.fasta)
+* A chromosome
+* A start position
+* An end position
+* A query sequence (pattern) that we want to check whether is found within the region or not
+
+You can use this code skeleton:
+```python
+def region_has_pattern(fasta_file_name, chromosome, start, end, query_sequence):
+    # step 1: extract the region from the fasta file using pyfaidx
+    # remember to have imported Fasta from pyfaidx in the top of your python file
+    # step 2: check whether the query sequence is found within this region or not
+    # return True/False
+```
 
 
