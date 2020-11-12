@@ -3,13 +3,22 @@
 ## Python exercise (mainly repetition)
 Do these exercises if you feel a bit rusty of don't have much experience programming Python.
 
+#### Before you start
+Through the following exercises, you will create a small program for finding sequence matches. Create a directory for this exercise:
+```
+mkdir sequence_matcher
+```
+
+Now create a file `sequence_matcher.py` in this directory. Write all your code in this file.
+
+
+#### Exercise 1 (if/else)
 
 ```python
 query_sequence = "CCGCG"
 reference_sequence = "ACCAGATCCACTACT"
 ````
 
-#### Exercise 1 (if/else)
 Given the two variables above, write python code to check whether the query sequence is found within the reference sequence. Print "Match!" if is found and "No match!" if it is not found.
 
 Hint: You can check whether a string is inside another string in python with the `in` operator, e.g. 
@@ -25,6 +34,12 @@ Move the code from exercise 1 into a function. The function should take two para
 ```python
 def sequence_has_pattern(reference_sequence, query_sequence):
     # continue here, remember to return True/False in the end
+```
+
+Test your function, e.g. like this:
+```python
+result = sequence_has_pattern("ACTGAC", "AC")
+print(result)  # This should print True if everything is correct
 ```
 
 
