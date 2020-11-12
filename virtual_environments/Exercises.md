@@ -42,7 +42,7 @@ This will return a path, which should lead to somewhere inside your virtual envi
 ## Exercise 2: Install a package inside your virtual environment
 We want to install the package `pyfaidx`, which is a Python package for reading fasta files.
 
-Run the appropriate commands for installing the package. Look at the slides if you are unsure what command to run.
+Run the appropriate commands for installing the package. Look at the lecture slides if you are unsure what command to run.
 
 Try uninstalling `pyfaidx` and then installing it again. Run the command `python3 -m pip list` before and after uninstalling to list all the packages you have installed.
 
@@ -70,7 +70,7 @@ Now, install your package (remember to be positioned in the same directory):
 python3 -m pip install -e .
 ```
 
-Verify first by listing all Python packages that the package is installed:
+Verify first, by listing all Python packages, that the package is installed:
 
 ```
 python3 -m pip list
@@ -91,7 +91,8 @@ from sequence_matcher import read_sequences_from_file
 If nothing happens, it means the import went fine and everything is working.
 
 
-## Exercise 4: 
+## Exercise 4: Extending your package
+We 
 
 
 
