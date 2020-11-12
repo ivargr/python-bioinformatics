@@ -14,7 +14,7 @@ Now create a file `sequence_matcher.py` in this directory. In the following exer
 #### Exercise 1 (if/else)
 
 ```python
-query_sequence = "CCGCG"
+query_sequence = "CCA"
 reference_sequence = "ACCAGATCCACTACT"
 ````
 
@@ -52,7 +52,7 @@ Write Python code to read each line in the file. For each line, check if the que
 
 #### Exercise 4 (lists)
 
-Create a function `read_sequences_from_file` that takes a file_name as parameter and that reads sequences from a the file (which is like like the file in exercise 3). All the sequences should be put into a list and the function should return that list.
+Create a function `read_sequences_from_file` that takes a file name as parameter and that reads sequences from a the file (which is like the file in exercise 3). All the sequences should be put into a list and the function should return that list.
 
 Test your function like this:
 
@@ -61,8 +61,20 @@ sequences = read_sequences_from_file("sequences.txt")
 print(sequences)
 ```
 
+NB: Remember that if your sequences get a line break `\n` at the end, you can remove that using the `strip()` method:
+```python
+sequence = sequence.strip()
+```
+
 #### Exercise 5 (find matches in a list of sequences)
 Create a function `get_sequences_with_pattern` that takes a list of sequences (like the one returned by `read_sequences_from_file`) and a query sequence and that returns all the sequences that contains the pattern (query sequence).
+
+Test that your function works, e.g. like this:
+```
+sequences = read-sequences_from_file("sequences.txt")
+sequences_with_match = get_sequences_with_pattern(sequences, "A")
+print(sequences_with_match)  # this should print all the sequences
+```
 
 #### Exercise 6 (command line tool)
 Your program now has a lot of functions. We want to make this into a reusable program that you can run on the unix command line like this:
@@ -71,7 +83,7 @@ Your program now has a lot of functions. We want to make this into a reusable pr
 python3 program.py sequences.txt ACTG
 ```
 
-In the command above we specify two arguments to the python program (the file name and the pattern we want to search for). We can read these arguments in our Python program like this:
+In the command above we specify two arguments to the Python program (the file name and the pattern we want to search for). We can read these arguments in our Python program like this:
 
 ```python
 import sys
@@ -80,7 +92,7 @@ query_sequence = sys.argv[2]
 ```
 
 * Modify your code so that it reads a file name and query sequence from command line arguments. 
-* Call the functions you have created, and print all the sequences that create a match (make sure nothing else is printed, use logging if you want to print anything else)
+* Call the functions you have created, and print all the sequences that have a match, each sequence on a separate line, Make sure nothing else is printed (use logging if you want to print anything else)
 
 
 You can now test your Python program on the command line like this on the command line:
@@ -94,11 +106,25 @@ Check that the file `matching_sequences.txt` now contains the sequences you woul
 You now have your own small Python program for a specific purpose!
 
 
+#### Exercise 7
+Your file now has a bunch of functions and some code that reads arguments from the command line. A problem with this setup is that the code that is not inside functions will run if you want to import this file from another python file. To avoid this problem, one usually puts that code inside an `if __name__ == "__main__"` clause:
 
-#### Exercise 7: Extra exercise
-Do this one if you think the other exercises where too easy.
+```python
+# your functions ...
 
-Modify your program so that the function `sequence_has_matches` takes a second parameter `number_of_allowed_mismatches`. The function should now return true if the pattern matches given the number of allowed mismatches. For instance, if allowed mismatches is 1, the query sequence "ACTG" should have a match in the sequence "ACCGTTT".
+if __name__ == "__main__":
+    # Code that runs when you run this python script on the command line
+    # this code will not run if you import this file elsewhere
+    file_name = sys.argv[1]
+    # ......
+```
+
+Change your code so that it has the part you wrote in exercie 6 inside an if-clause like shown above. That way, the code will not run if you import this file elsewhere (which we will do in the exercices later in this course).
+
+#### Exercise 8: Extra exercise for
+Do this one if you think the other exercises were too easy.
+
+Modify your program so that the function `sequence_has_matches` takes a second parameter `number_of_allowed_mismatches`. The function should now return `true` if the pattern matches given the number of allowed mismatches. For instance, if allowed mismatches is 1, the query sequence "ACTG" should have a match in the sequence "ACCGTTT".
 
 NB: We only take into consideration exact mismatches here (base pair substitutions), not deletions or insertions.
 
