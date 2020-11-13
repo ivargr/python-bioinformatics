@@ -67,7 +67,7 @@ sequence = sequence.strip()
 ```
 
 #### Exercise 5 (find matches in a list of sequences)
-Create a function `get_sequences_with_pattern` that takes a list of sequences (like the one returned by `read_sequences_from_file`) and a query sequence and that returns all the sequences that contains the pattern (query sequence).
+Create a function `get_sequences_with_pattern` that takes a list of sequences (like the one returned by `read_sequences_from_file`) and a query sequence and that returns all the sequences that contain the pattern (query sequence).
 
 Test that your function works, e.g. like this:
 ```python
