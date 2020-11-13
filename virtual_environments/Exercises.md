@@ -94,7 +94,7 @@ If nothing happens, it means the import went fine and everything is working.
 ## Exercise 4: Extending your package
 We now want to extend our sequence matcher to be able to find matches on a real reference genome. In order to do that, we will use python package `pyfaidx` to read sequences from a reference genome (in a fasta file).
 
-* Start by downloading [this fasta file](hg19_chr20.fasta) which contains chr20 on the hg19 reference genome.
+* Start by downloading [this fasta file](hg19_chr20.fasta?raw=true) which contains chr20 on the hg19 reference genome.
 * Test that pyfaidx is working by opening an interactive Python shell (just type `python3` in the same directory that you have the hg19_chr20.fasta file).
 
 Do the following in the interactive python shell: 
