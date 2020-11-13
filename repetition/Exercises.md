@@ -129,5 +129,7 @@ Modify your program so that the function `sequence_has_matches` takes a second p
 NB: We only take into consideration exact mismatches here (base pair substitutions), not deletions or insertions.
 
 
+#### If you have a lot of time left
+Go through all the topics covered in the slides, make sure you understand them, try making small Python scripts where you try out and play around with the topics.
 
 
