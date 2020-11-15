@@ -9,8 +9,9 @@
 
 This page contains the following modules. Click on a module to see the exercises and material for that module:
 
-* [Part 1: Python programming](repetition/)
-* [Part 2: Python in bioinformatics](part2/)
+* [Part 1: Python programming (friday)](repetition/)
+* [Part 2: More Python programming (monday)](part2/)
+* [Part 3: Python in bioinformatics (monday)](part3/)
 
 
 
