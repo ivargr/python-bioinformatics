@@ -30,10 +30,11 @@ source dna_analyser_environment/bin/activate
 
 Your command line prompt should now start with `(dna_analyser_environment)` to indicate that this environment is active.
 
-When you now use `python3`, you will use the Python from this environment. You can check this by using the unix command `which` to find out what `python3` is pointing to:
+When you now use `python3`/`python`, you will use the Python from this environment. You can check this by using the unix command `which` to find out what `python3`/`python` is pointing to:
 
 ```
 which python3
+# .. or which python
 ```
 
 This will return a path, which should lead to somewhere inside your virtual environment directory.
