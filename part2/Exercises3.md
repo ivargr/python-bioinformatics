@@ -1,4 +1,4 @@
-#Exercises
+# Exercises
 Do these if you found the friday exercises okay.
 
 ### Exercise 1
