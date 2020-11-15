@@ -41,11 +41,12 @@ Print the number of G's and C's and check that the numbers are correct.
 # We create a string containing our sequence and store it in a variable
 sequence = "AACCTGGG"
 # You can count the number of Gs in a string like this:
-n = sequence.count("G")
-# The variable n now contains the number
-print(n)
-n = sequence.count("C")
-print(n)
+n_g = sequence.count("G")
+# The variable nG now contains the number
+print(n_g)
+# We do the same again for C
+n_c = sequence.count("C")
+print(n_c)
 ```
 </details>
 
