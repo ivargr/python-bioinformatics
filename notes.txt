@@ -1,0 +1,14 @@
+
+
+
+- Litt undervisning (mer gjennomgang av konsepter, live koding)
+- To sett med oppgaver:
+    - a) For de som synes oppgavene på fredag var vanskelig
+    - b) For de
+
+- Kort om å lage sin egen python-pakke
+- En enkel oppgave hvor alt man gjør er å legge til en setup.py fil
+
+
+
+

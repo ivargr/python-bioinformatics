@@ -121,7 +121,7 @@ if __name__ == "__main__":
 
 Change your code so that it has the part you wrote in exercie 6 inside an if-clause like shown above. That way, the code will not run if you import this file elsewhere (which we will do in the exercices later in this course).
 
-#### Exercise 8: Extra exercise for
+#### Exercise 8: Extra exercise
 Do this one if you think the other exercises were too easy.
 
 Modify your program so that the function `sequence_has_matches` takes a second parameter `number_of_allowed_mismatches`. The function should now return `true` if the pattern matches given the number of allowed mismatches. For instance, if allowed mismatches is 1, the query sequence "ACTG" should have a match in the sequence "ACCGTTT".

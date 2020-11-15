@@ -1,0 +1,7 @@
+sequence_matcher.py
+setup.py
+somePackageName.egg-info/PKG-INFO
+somePackageName.egg-info/SOURCES.txt
+somePackageName.egg-info/dependency_links.txt
+somePackageName.egg-info/requires.txt
+somePackageName.egg-info/top_level.txt
