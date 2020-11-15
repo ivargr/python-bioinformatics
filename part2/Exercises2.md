@@ -96,7 +96,16 @@ Before you continue, make sure your code looks something like this:
     
 ```python
 
+def compute_gc_content(sequence):
+    n_c = sequence.count("C")
+    n_g = sequence.count("G")
+    length = len(sequence)
+    gc_content = (n_c + n_g) / length
+    return gc_content
 
+sequence = "AACCTGGG"
+result = compute_gc_content(sequence)
+print("Gc content is ", result)
 ```
     
 </details>
