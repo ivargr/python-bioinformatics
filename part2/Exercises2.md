@@ -20,9 +20,9 @@ In the following exercises, write all your code in the `gc_content.py` file.
 
 As an example, we now want to work with the DNA sequence `AACCTGGG`.
 
-Store this sequence in a variable in Python. You can name your variable `sequence`.
+**a)** Store this sequence in a variable in Python. You can name your variable `sequence`.
 
-Write code for finding the number of G's and C's in the sequence. Remember that you can count the number of occurences of a substring in a string with:
+**b)** Write code for finding the number of G's and C's in the sequence. Remember that you can count the number of occurences of a substring in a string with:
 
 ```
 number_of_occurences = sequence.count("some substring")
@@ -71,7 +71,22 @@ print("The GC-content is", gc_content)
 
 
 ### Exercise 3: Make a function for computing the GC content
+**a)** Put the code from exercise 1/2 inside a function. Name the function `compute_gc_content`. It should take one argument `sequence` and return the GC-content.
 
+You can use this skeleton code:
+```
+def compute_gc_content(sequence):
+    # compute the gc content here
+    # return the gc-content (change the dots)
+    return ..... 
+```
+
+**b)** Test your function by *calling* the function with a sequence, e.g. like this:
+```
+some_sequence = "AACC"
+result = compute_gc_content(some_sequence)
+print(result)
+```
 
 
 ### Exercise 4: Make a command line tool
