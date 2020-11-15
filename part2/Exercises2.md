@@ -59,15 +59,14 @@ Continue writing your code in the same file, below the code you wrote in Exercis
 
 **b**) Compute the GC-content and store it in a variable. Print the GC-content and manually verify that the number is correct.
 
-<summary>
-<details>View hint/solution</details>
-
+<details>
+<summary>View hint/solution</summary>
 ```python
 length_of_sequence = len(sequence)
 gc_content = .... write the formula here ....
 print("The GC-content is", gc_content)
 ```
-</summary>
+</details>
 
 
 ### Exercise 3: Make a function for computing the GC content
