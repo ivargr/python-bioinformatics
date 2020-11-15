@@ -1,5 +1,5 @@
 # Exercises (DNA analyser)
-Do these if you found the friday exercises a bit difficult
+Do these if you found the friday exercises a bit difficult.
 
 ### Introduction
 In these exercises we are making a small Python tool for analysing DNA sequences. We will, for instance, write code for computing the GC content in a string of DNA and counting the number of certain nucleotides. We will call our tool `dna_analyser`.
