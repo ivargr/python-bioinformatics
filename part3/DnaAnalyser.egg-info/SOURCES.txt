@@ -1,8 +1,0 @@
-gc_content.py
-setup.py
-DnaAnalyser.egg-info/PKG-INFO
-DnaAnalyser.egg-info/SOURCES.txt
-DnaAnalyser.egg-info/dependency_links.txt
-DnaAnalyser.egg-info/entry_points.txt
-DnaAnalyser.egg-info/requires.txt
-DnaAnalyser.egg-info/top_level.txt

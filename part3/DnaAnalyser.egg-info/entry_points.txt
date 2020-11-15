@@ -1,3 +1,0 @@
-[console_scripts]
-gc_content = gc_content:main
-
