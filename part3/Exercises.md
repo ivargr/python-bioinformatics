@@ -121,7 +121,7 @@ Make a new function `compute_gc_content_in_region` in gc_content.py. The functio
 
 You can use this code skeleton:
 ```python
-def compute_gc_content_in_region(fasta_file_name, chromosome, start, end, query_sequence):
+def compute_gc_content_in_region(fasta_file_name, chromosome, start, end):
     # step 1: extract the region from the fasta file using pyfaidx
     reference = Fasta(fasta_file_name)
     region_dna = str(reference[chromosome][start:end])
