@@ -2,34 +2,33 @@
 Do these if you found the friday exercises a bit difficult.
 
 ### Introduction
-In these exercises we are making a small Python tool for analysing DNA sequences. We will, for instance, write code for computing the GC content in a string of DNA and counting the number of certain nucleotides. We will call our tool `dna_analyser`.
+In these exercises we are making a small Python tool for analysing DNA sequences. We will here write code for computing the GC content in a string of DNA. We will call our tool `dna_analyser`.
 
 Start by making a new directory called `dna_analyser` somewhere on your computer or on your UIO home area:
 
 ```
+cd to/the/directory/you/want/
 mkdir dna_analyser
 ```
 
-Make a new file called `gc_content.py` inside this directory (you make more files in the same direcotry later)
-
+Make a new file called `gc_content.py` inside this directory.
 Remember that you should be positioned inside this directory in the terminal when you run your Python code.
+In the following exercises, write all your code in the `gc_content.py` file.
 
 
 ### Exercise 1: Counting nucleotides
-In the following exercises, write all your code in the `gc_content.py` file.
 
 As an example, we now want to work with the DNA sequence `AACCTGGG`.
 
 **a)** Store this sequence in a variable in Python. You can name your variable `sequence`.
 
-**b)** Write code for finding the number of G's and C's in the sequence. Remember that you can count the number of occurences of a substring in a string with:
+**b)** Write code for finding the number of G's and C's in the sequence. Remember that you can count the number of occurrences of a substring in a string with:
 
 ```
 number_of_occurences = sequence.count("some substring")
 ```
 
 Print the number of G's and C's and check that the numbers are correct.
-
 
 
 <details>
@@ -52,9 +51,9 @@ print(n_c)
 
 
 ### Exercise 2: Computing GC-content
-GC-content for a sequence is defined as the number of Gs and Cs divided by the sequence length. E.g., if half of the sequence contains G or C, then the GC content should be 0.5.
+GC-content for a sequence is defined as the number of Gs and Cs divided by the sequence length. E.g., if half of the sequence contains G or C, then the GC-content should be 0.5.
 
-Continue writing your code in the same file, below the code you wrote in Exercise 1.
+Continue writing code in the same file, below the code you wrote in Exercise 1.
 
 **a**) Find the length of your sequence by using the `len` function. Print the length and check that it is correct.
 
@@ -62,6 +61,7 @@ Continue writing your code in the same file, below the code you wrote in Exercis
 
 <details>
 <summary>View hint/solution</summary>
+
 ```python
 length_of_sequence = len(sequence)
 gc_content = .... write the formula here ....
