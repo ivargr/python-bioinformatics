@@ -164,7 +164,7 @@ def sequence_is_valid_dna(sequence):
         if base is not "A" and base is not "C" and base is not "G" and base is not "T" and base is not "N":
             return False
             
-        return True
+    return True
 ```
     
 </details>
