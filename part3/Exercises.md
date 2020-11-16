@@ -8,8 +8,11 @@ This exercise build on the code you wrote for computing GC-content. We will now 
 ## Before you start
 You can do these exercises either on your computer (if you have a unix shell, git-bash or similar) or on the UIO login nodes (`ssh yourusername@login.uio.no`). If you do them on the login nodes, and you did the previous exercise on your computer, you should move your code to your UIO home area first:
 ```
-scp path/to/dna_analyser yourusername@login.uio.no:.
+scp -r dna_analyser yourusername@login.uio.no:.
 ```
+
+The command above can be run if you are one directory above the `dna_analyser` directory. If not, you need to specify the full path.
+
 
 The above command moves the folder `dna_analyser` to your home area.
 
