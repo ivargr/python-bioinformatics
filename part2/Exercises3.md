@@ -9,6 +9,8 @@ on that code. In the following exercises, we want to extend the program created 
 
 Change the program so that instead of taking a sequence from the command line, you take a file name. Instead of computing the GC-content for a single sequence, go through the lines in the file (there is one sequence on each line) and compute the GC content for every sequence. For every sequence, print the sequence, a space, and then the GC-content for that sequence.
 
+You can download and use [this sequences.txt file](sequences.txt) to test your program.
+
 <details>
 <summary>Click to see a hint on how to solve this exercise</summary>
 

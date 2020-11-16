@@ -1,11 +1,13 @@
 
 
-def merge_two_sequences(sequence1, sequence2):
-	new_sequence = sequence1 + sequence2
+print("Start program")
+
+i = 0
+while i < 10:
+	print("Hello")
+	i += 1
 
 
-merge_two_sequences("AA", "TT")
-
-print(new_sequence)
+print("End program")
 
 
