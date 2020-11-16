@@ -28,7 +28,13 @@ To activate this python installation, run:
 source dna_analyser_environment/bin/activate
 ```
 
-Your command line prompt should now start with `(dna_analyser_environment)` to indicate that this environment is active.
+**NOTE** If you are windows using gitbash, the command is slightly different:
+```
+source dna_analyser_environment/Scripts/activate
+```
+
+
+Your command line prompt should now start with `(dna_analyser_environment)` to indicate that this environment is active. In gitbash, the text will show above the line.
 
 When you now use `python3`/`python`, you will use the Python from this environment. You can check this by using the unix command `which` to find out what `python3`/`python` is pointing to:
 

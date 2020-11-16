@@ -1,13 +1,28 @@
+import sys
 
-
+def sequence_is_valid(sequence):
+	
+	for n in sequence:
+		if n != "A" and n != "G" and n != "T" and n != "C" and n != "N":
+			return False
+	return True
+		
 
 def compute_gc_content(sequence):
-	GC_content = 0.5
-	return GC_content
-	
-	
-gccontent = compute_gc_content("ACTG")
-	
-print("The gc content is", gccontent)
+	n_c = sequence.count("C")
+	n_g = sequence.count("G")
+	length = len(sequence)
+
+	return (n_c + n_g) / length
+
+
+sequence = sys.argv[1]
+
+if sequence_is_valid(sequence):
+
+	result = compute_gc_content(sequence)
+	print(result)
+else:
+	print("You need to provide a valid sequence")
 
 
